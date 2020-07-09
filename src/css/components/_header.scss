@@ -1,0 +1,27 @@
+.header {
+  height: 100vh;
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 20%;
+  background-attachment: fixed;
+  // animation: BackgroundAnimation 10s linear infinite;
+
+  // @keyframes BackgroundAnimation {
+  //   0% {
+  //     background-size: 100%;
+  //   }
+  //   50% {
+  //     background-size: 110%;
+  //   }
+
+  //   100% {
+  //     background-size: 100%;
+  //   }
+  // }
+  &__container {
+    padding-top: 100px;
+    height: 100%;
+    @include flex(center, flex-start, column);
+  }
+}

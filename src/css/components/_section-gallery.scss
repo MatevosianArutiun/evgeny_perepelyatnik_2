@@ -1,0 +1,13 @@
+.section-gallery {
+  background-color: $darken-grey;
+  min-height: 100vh;
+  @include flex(flex-start, center, column);
+
+  &__uk-panel {
+    height: 100vh;
+    cursor: grab;
+    &:active {
+      cursor: grabbing;
+    }
+  }
+}

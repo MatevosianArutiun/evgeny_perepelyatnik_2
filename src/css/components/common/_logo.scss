@@ -1,0 +1,21 @@
+.logo {
+  &__link {
+    @include flex(center, center, row);
+  }
+  &__img {
+    width: 90px;
+    height: auto;
+    margin-right: 10px;
+  }
+  &__title {
+    border-right: 1px solid $gray;
+    padding-right: 20px;
+    text-align: center;
+    @include text($H200, 900, $darken);
+    font-family: $main-font;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 2;
+    transition: all 0.3s linear;
+  }
+}
