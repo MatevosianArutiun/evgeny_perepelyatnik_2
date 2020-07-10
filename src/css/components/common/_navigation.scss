@@ -15,7 +15,7 @@
   &__container {
     @include flex(space-between, center, row);
     height: 100%;
-    padding: 0 24px;
+    padding: 0 50px;
   }
   &--active {
     background-color: $blue;
