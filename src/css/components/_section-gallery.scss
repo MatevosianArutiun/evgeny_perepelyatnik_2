@@ -1,9 +1,10 @@
 .section-gallery {
   background-color: $darken-grey;
-  min-height: 100vh;
-  @include flex(flex-start, center, column);
+  // min-height: 100vh;
+  // @include flex(center, center, column);
 
   &__uk-panel {
+    @include flex(center, center, column);
     height: 100vh;
     cursor: grab;
     &:active {

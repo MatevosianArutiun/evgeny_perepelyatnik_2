@@ -11,7 +11,7 @@
     @include flex(center, center, row);
   }
   &__content {
-    margin-right: 250px;
+    margin-right: 200px;
   }
   &__subtitle {
     @include text($H700, 900, $white);
@@ -43,5 +43,9 @@
   }
   &__text:not(:last-child) {
     margin-bottom: 30px;
+  }
+  &__social {
+    border: none;
+    padding-left: 0;
   }
 }

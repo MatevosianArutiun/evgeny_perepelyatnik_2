@@ -58,5 +58,4 @@ var myFullpage = new fullpage("#fullpage", {
   navigation: true,
 
   loopBottom: true,
-  parallax: true,
 });
