@@ -40,22 +40,22 @@
     animation: cube-loader 2.76s infinite linear both;
     transform-origin: 100% 100%;
   }
-  &--2 {
+  &__cube--2 {
     transform: scale(1.1) rotateZ(90deg);
   }
-  &--3 {
+  &__cube--3 {
     transform: scale(1.1) rotateZ(180deg);
   }
-  &--4 {
+  &__cube--4 {
     transform: scale(1.1) rotateZ(270deg);
   }
-  &--2:before {
+  &__cube--2:before {
     animation-delay: 0.35s;
   }
-  &--3:before {
+  &__cube--3:before {
     animation-delay: 0.69s;
   }
-  &--4:before {
+  &__cube--4:before {
     animation-delay: 1.04s;
   }
 }
