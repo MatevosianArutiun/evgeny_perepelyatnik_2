@@ -1,6 +1,4 @@
 .social {
-  border-left: 1px solid $gray;
-  padding-left: 40px;
   &__list {
     @include flex(space-between, center, row);
   }

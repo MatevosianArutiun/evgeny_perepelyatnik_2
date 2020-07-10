@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   showLoading();
   changeTitle();
   setInterval(changeTitle, 12000);
-  changeWidgetNavigation();
 });
 
 // let el = document.querySelector(".navigation");
@@ -57,5 +56,5 @@ document.addEventListener("DOMContentLoaded", () => {
 var myFullpage = new fullpage("#fullpage", {
   navigation: true,
 
-  loopBottom: true,
+  // loopBottom: true,
 });

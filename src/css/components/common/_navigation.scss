@@ -20,4 +20,9 @@
   &--active {
     background-color: $blue;
   }
+  &__line {
+    display: block;
+    border-right: 1px solid $darken;
+    height: 30px;
+  }
 }
