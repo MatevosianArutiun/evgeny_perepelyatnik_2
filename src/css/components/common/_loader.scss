@@ -1,6 +1,5 @@
 .loader {
-  align-items: center;
-  display: flex;
+  @include flex(center, center, column);
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -10,9 +9,7 @@
   &--noactive {
     display: none;
   }
-  &__caption {
-    margin: 0 auto;
-  }
+
   &__cube-box {
     width: 73px;
     height: 73px;
@@ -58,22 +55,21 @@
   &__cube--4:before {
     animation-delay: 1.04s;
   }
-}
-
-@keyframes cube-loader {
-  0%,
-  10% {
-    transform: perspective(136px) rotateX(-180deg);
-    opacity: 0;
-  }
-  25%,
-  75% {
-    transform: perspective(136px) rotateX(0deg);
-    opacity: 1;
-  }
-  90%,
-  100% {
-    transform: perspective(136px) rotateY(180deg);
-    opacity: 0;
+  @keyframes cube-loader {
+    0%,
+    10% {
+      transform: perspective(136px) rotateX(-180deg);
+      opacity: 0;
+    }
+    25%,
+    75% {
+      transform: perspective(136px) rotateX(0deg);
+      opacity: 1;
+    }
+    90%,
+    100% {
+      transform: perspective(136px) rotateY(180deg);
+      opacity: 0;
+    }
   }
 }
