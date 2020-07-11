@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 var myFullpage = new fullpage("#fullpage", {
   navigation: true,
   scrollBar: true,
-  scrollingSpeed: 50,
+  scrollingSpeed: 0,
 
   // loopBottom: true,
 });
