@@ -19,4 +19,7 @@
   &:active {
     transform: scaleX(0.97) translateY(1px);
   }
+  &__text {
+    display: block;
+  }
 }
