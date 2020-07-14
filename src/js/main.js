@@ -2,12 +2,35 @@
 
 import { showLoading } from "./scripts/preloader";
 import { changeTitle } from "./scripts/title";
+import { fullPage } from "./scripts/fullpage";
+import { parallax } from "./scripts/parallax";
 
 document.addEventListener("DOMContentLoaded", () => {
   showLoading();
   changeTitle();
   setInterval(changeTitle, 12000);
+  fullPage();
+  parallax();
 });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const click = () => {
+//     let menu = document.querySelector(".menu");
+
+//     menu.addEventListener("click", function (event) {
+//       let target = event.target;
+//       if (
+//         target.className !== "menu__link" &&
+//         target.className !== "menu__item"
+//       )
+//         return;
+//       target.addEventListener("click", function () {
+//         document.getElementById("audio").play();
+//       });
+//     });
+//   };
+//   click();
+// });
 
 // let el = document.querySelector(".navigation");
 
@@ -53,10 +76,3 @@ document.addEventListener("DOMContentLoaded", () => {
 //     this.classList.remove("navigation--active");
 //   }
 // }
-var myFullpage = new fullpage("#fullpage", {
-  navigation: true,
-  scrollBar: true,
-  scrollingSpeed: 0,
-
-  // loopBottom: true,
-});
