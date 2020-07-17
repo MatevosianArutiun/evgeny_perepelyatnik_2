@@ -1,0 +1,13 @@
+.section-video {
+  padding-top: 30px;
+  height: 100vh;
+  width: 100%;
+  background-color: $darken;
+  &__wrapper {
+  }
+  &__slide {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 85vh;
+  }
+}
