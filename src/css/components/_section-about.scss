@@ -14,7 +14,7 @@
     margin-right: 200px;
   }
   &__subtitle {
-    @include text($H700, 900, $white);
+    @include text($H700, 400, $white);
   }
   &__title {
     @include text($H800, 900, $white);
