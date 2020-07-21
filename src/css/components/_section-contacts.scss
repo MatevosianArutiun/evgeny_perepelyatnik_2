@@ -7,6 +7,9 @@
   &__container {
     // @include flex(center, center, row);
   }
+  &__content {
+    display: inline-block;
+  }
   &__subtitle {
     @include text($H700, 400, $white);
   }
@@ -33,9 +36,11 @@
       margin-bottom: 40px;
     }
     &:hover {
-      opacity: 0.6;
+      color: rgba(255, 238, 76, 1);
+      text-shadow: 0px 0px 10px rgba(255, 238, 76, 1);
     }
   }
+
   &__list {
     @include flex(flex-start, center, row);
   }

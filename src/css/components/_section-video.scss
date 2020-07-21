@@ -3,18 +3,20 @@
 
   height: 100vh;
   width: 100%;
-  background-color: $darken;
-  // background-image: url(../images/bg-video.png);
-  // background-repeat: no-repeat;
-  // background-size: 100% 100%;
-  // background-position: center 40%;
-  // background-attachment: fixed;
+  // background-color: $darken;
+  background-image: url(../images/bg-video.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center 40%;
+  background-attachment: fixed;
 
   &__slide {
-    border: 5px solid $bg-imagery;
-    margin-top: 50px;
+    outline: none;
+    // border: 5px solid $gray;
+    border-radius: 10px;
+    margin-top: 25px;
     margin-left: 50%;
     transform: translateX(-50%);
-    height: 70vh;
+    height: 90vh;
   }
 }
