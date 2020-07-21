@@ -1,0 +1,45 @@
+.section-contacts {
+  background-image: url(../images/bg-contacts.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center 40%;
+  background-attachment: fixed;
+  &__container {
+    // @include flex(center, center, row);
+  }
+  &__subtitle {
+    @include text($H700, 400, $white);
+  }
+  &__title {
+    @include text($H800, 900, $white);
+    margin-bottom: 0px;
+  }
+  &__text {
+    @include text($H100, 400, $gray);
+    font-family: $text-font;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+  }
+  &__span {
+    @include text($H100, 400, $white);
+    margin-top: 10px;
+  }
+  &__link {
+    @include text($H100, 400, $blue);
+    transition: all 0.3s linear;
+    &--mail {
+      @include text($H300, 400, $blue);
+      display: inline-block;
+      margin-bottom: 40px;
+    }
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  &__list {
+    @include flex(flex-start, center, row);
+  }
+  &__icon {
+    fill: $gray;
+  }
+}
