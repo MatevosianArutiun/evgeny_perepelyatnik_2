@@ -5,10 +5,12 @@
   background-position: center 40%;
   background-attachment: fixed;
   &__container {
-    // @include flex(center, center, row);
+    @include flex(space-between, center, row);
   }
   &__content {
     display: inline-block;
+    width: 50%;
+    margin-right: 200px;
   }
   &__subtitle {
     @include text($H700, 400, $white);
@@ -20,7 +22,7 @@
   &__text {
     @include text($H100, 400, $gray);
     font-family: $text-font;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-bottom: 30px;
   }
   &__span {
@@ -46,5 +48,16 @@
   }
   &__icon {
     fill: $gray;
+  }
+  &__form-wrapper {
+    padding-top: 50px;
+    width: 50%;
+    @include flex(center, center, column);
+  }
+  &__title {
+    margin-bottom: 20px;
+    &--blue {
+      animation: textAnimation 0s linear infinite;
+    }
   }
 }

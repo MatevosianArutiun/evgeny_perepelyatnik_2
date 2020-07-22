@@ -73,31 +73,48 @@
       </div>
     </div>
 
-    <!-- <form class="" action="POST">
-      <input
-        class="section-contact__input"
-        type="text"
-        minlength="5"
-        placeholder="Your name..."
-        required
-      />
+    <div
+      class="section-contacts__form-wrapper"
+      data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800; repeat: true"
+    >
+      <h2 class="section-contacts__title content__title">
+        <span class="section-contacts__title--blue content__title--blue"
+          >Get in</span
+        >
+        Touch
+      </h2>
+      <form id="form" class="section-contacts__form form" action="POST">
+        <input
+          class="section-contact__input form__input"
+          type="text"
+          minlength="5"
+          placeholder="Your name..."
+          required
+        />
 
-      <input
-        class="section-contact__input"
-        type="email"
-        placeholder="Your email..."
-        required
-      />
-      <textarea
-        class="section-contact__textarea"
-        name=""
-        id=""
-        minlength="3"
-        cols="30"
-        rows="10"
-        placeholder="Your message... (necessarily)"
-        required
-      ></textarea>
-    </form> -->
+        <input
+          class="section-contact__input form__input"
+          type="email"
+          placeholder="Your email..."
+          required
+        />
+        <textarea
+          class="section-contact__textarea form__textarea"
+          minlength="3"
+          cols="30"
+          rows="5"
+          placeholder="Question... (necessarily)"
+          required
+        ></textarea>
+
+        <button
+          form="form"
+          class="form__button button uk-animation-toggle"
+          tabindex="0"
+        >
+          <span class="button__text uk-animation-scale-up">Send</span>
+        </button>
+      </form>
+    </div>
   </div>
 </section>
