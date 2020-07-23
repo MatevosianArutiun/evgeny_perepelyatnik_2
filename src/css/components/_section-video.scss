@@ -19,6 +19,11 @@
     margin-left: 50%;
     transform: translateX(-50%);
     height: 90vh;
-    // width: 500px;
+  }
+  &__previous {
+    margin-left: 100px;
+  }
+  &__next {
+    margin-right: 100px;
   }
 }

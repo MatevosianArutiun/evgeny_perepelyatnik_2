@@ -2,7 +2,6 @@ export const showLoading = () => {
   let $main = document.querySelector("#main");
   const displayNone = () => {
     $main.classList.remove("main");
-    $main.classList.add("maine--active");
   };
   setTimeout(displayNone, 3350);
 

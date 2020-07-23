@@ -9,16 +9,25 @@
     border: none;
     outline: none;
     padding: 15px;
-    @include text($H200, 400, $white);
+    @include text($H300, 400, $white);
     letter-spacing: 1px;
     border-bottom: 2px solid $bg-imagery;
     transition: all 0.3s linear;
+    font-family: $button-font;
+    letter-spacing: 2px;
   }
   &__input::placeholder {
+    @include text($H200, 400, $white);
     color: $gray;
   }
   &__input:focus {
     border-bottom: 2px solid $blue;
+  }
+  &__input:invalid:not(:placeholder-shown) {
+    border-bottom: 2px solid $red;
+  }
+  &__input:valid {
+    border-bottom: 2px solid $green;
   }
   &__textarea {
     resize: none;
@@ -28,15 +37,23 @@
     border: none;
     outline: none;
     padding: 15px;
-    @include text($H200, 400, $white);
+    @include text($H300, 400, $white);
     letter-spacing: 1px;
     border-bottom: 2px solid $bg-imagery;
+    font-family: $button-font;
+    letter-spacing: 2px;
   }
   &__textarea::placeholder {
     @include text($H200, 400, $gray);
   }
   &__textarea:focus {
     border-bottom: 2px solid $blue;
+  }
+  &__textarea:invalid:not(:placeholder-shown) {
+    border-bottom: 2px solid $red;
+  }
+  &__textarea:valid {
+    border-bottom: 2px solid $green;
   }
   &__button {
     border: none;
