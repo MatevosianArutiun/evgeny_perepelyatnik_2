@@ -3,7 +3,7 @@ export const fullPage = () => {
     navigation: true,
     slidesNavigation: true,
     scrollBar: true,
-    scrollingSpeed: 100,
+    scrollingSpeed: 60,
     // scrollHorizontally: true,
     // controlArrows: false,
     // loopBottom: true,
