@@ -37,7 +37,7 @@
     height: 1px;
     width: 0%;
     background-color: $gray;
-    transition: width 0.2s ease-in-out;
+    transition: width 0.3s ease-in-out;
   }
   &__link:hover:before,
   &__link:hover::after,
@@ -46,8 +46,8 @@
     width: 100%;
   }
   &__link-gallery {
-    @include flex(scenter, center, column);
-    padding-top: 30px;
+    @include flex(center, center, row);
+    // padding-top: 30px;
   }
   &__link-gallery:hover:before,
   &__link-gallery:hover::after,
