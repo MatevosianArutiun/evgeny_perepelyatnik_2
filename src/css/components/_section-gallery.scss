@@ -1,8 +1,11 @@
 .section-gallery {
   height: 100vh;
-  background-color: $darken-grey;
-  // min-height: 100vh;
-  // @include flex(center, center, column);
+  background-color: $darken;
+  // background-image: url(../images/bg-video.jpg);
+  // background-repeat: no-repeat;
+  // background-size: 100% 100%;
+  // background-position: center 40%;
+  // background-attachment: fixed;
 
   &__uk-panel {
     @include flex(center, center, column);
@@ -12,7 +15,11 @@
       cursor: grabbing;
     }
   }
-  // &__img {
-  //   height: 95vh;
-  // }
+  &__img {
+    height: 60vh;
+    object-fit: cover;
+    @media screen and (min-width: $screen-desktop-large) {
+      height: 95vh;
+    }
+  }
 }

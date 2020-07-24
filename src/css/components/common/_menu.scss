@@ -1,8 +1,8 @@
 .menu {
-  // border-right: 1px solid $gray;
-  // border-left: 1px solid $gray;
-  // padding-right: 50px;
-  // padding-left: 50px;
+  display: none;
+  @media screen and (min-width: $screen-desktop-large) {
+    @include flex(space-between, center, row);
+  }
   line-height: 2;
   &__list {
     @include flex(space-between, center, row);
@@ -11,17 +11,24 @@
   &__item:not(:last-child) {
     margin-right: 50px;
   }
+
   &__link {
     padding: 7px 0 7px 0;
     @include text($H10, 700, $darken);
     font-family: $main-font;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: all 0.2s linear;
-    &:hover,
-    &:focus {
-      color: $blue;
+    transition: all 0.3s linear;
+    &:hover {
+      color: $blue !important;
+      fill: $blue;
     }
+  }
+  &__link-icon {
+    text-align: center;
+    height: 20px !important;
+    width: 20px !important;
+    transform: rotate(270deg) !important;
   }
 
   &__link::after {
@@ -37,5 +44,25 @@
   &__link:focus:before,
   &__link:focus::after {
     width: 100%;
+  }
+  &__link-gallery {
+    @include flex(scenter, center, column);
+    padding-top: 30px;
+  }
+  &__link-gallery:hover:before,
+  &__link-gallery:hover::after,
+  &__link-gallery:focus:before,
+  &__link-gallery:focus::after {
+    width: 0%;
+  }
+  &__dropdown {
+    border-radius: 10px;
+    text-align: center;
+    background-color: $darken;
+    // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1),
+    //   inset 0 1px rgba(255, 255, 255, 0.1), inset 0 0 rgba(255, 255, 255, 0.2),
+    //   inset 0 10px 20px rgba(255, 255, 255, 0.25),
+    //   inset 0 -15px 30px rgba(0, 0, 0, 0.2);
+    // width: 50px;
   }
 }
