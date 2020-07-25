@@ -4,6 +4,7 @@ import { showLoading } from "./scripts/preloader";
 import { scroll } from "./scripts/scroll";
 import { changeTitle } from "./scripts/title";
 import { fullPage } from "./scripts/fullpage";
+import { showMap } from "./scripts/map";
 import { parallax } from "./scripts/parallax";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   changeTitle();
   setInterval(changeTitle, 12000);
   fullPage();
+  showMap();
   parallax();
 });
 

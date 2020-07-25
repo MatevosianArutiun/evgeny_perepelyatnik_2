@@ -16,7 +16,7 @@
   &__container {
     @include flex(center, center, row);
     height: 100%;
-    padding: 0 50px;
+    padding: 0 40px;
     @media screen and (min-width: $screen-desktop-large) {
       @include flex(space-between, center, row);
     }

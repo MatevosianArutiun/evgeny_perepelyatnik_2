@@ -13,6 +13,7 @@ export const fullPage = () => {
       "video",
       "lovestory",
       "contact",
+      "footer",
     ],
 
     // scrollHorizontally: true,
