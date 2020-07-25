@@ -1,13 +1,18 @@
 .footer {
+  padding-top: 5vh;
   background-color: $black;
   &__header {
+    width: 100%;
     @include flex(space-between, center, row);
     border-bottom: 1px solid $gray;
     padding-bottom: 20px;
     margin-bottom: 20px;
   }
+
   &__main {
     height: 20vh;
+    // background-color: $dark;
+    margin-bottom: 3vh;
   }
   &__logo {
     @include flex(center, center, row);
@@ -22,7 +27,7 @@
     margin-right: 20px;
   }
   &__text {
-    @include text($H200, 400, $gray);
+    @include text($H50, 400, $gray);
     font-family: $text-font;
     letter-spacing: 1px;
   }
@@ -36,6 +41,7 @@
     width: 0%;
   }
   &__info {
+    padding-left: 5px;
     @include flex(space-between, center, row);
   }
   &__icon {
