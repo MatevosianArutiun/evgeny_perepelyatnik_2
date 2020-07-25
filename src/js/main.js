@@ -1,12 +1,14 @@
 "use strict";
 
 import { showLoading } from "./scripts/preloader";
+import { scroll } from "./scripts/scroll";
 import { changeTitle } from "./scripts/title";
 import { fullPage } from "./scripts/fullpage";
 import { parallax } from "./scripts/parallax";
 
 document.addEventListener("DOMContentLoaded", () => {
   showLoading();
+  scroll();
   changeTitle();
   setInterval(changeTitle, 12000);
   fullPage();

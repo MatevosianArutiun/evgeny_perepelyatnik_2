@@ -36,13 +36,11 @@
     content: "";
     height: 1px;
     width: 0%;
-    background-color: $gray;
+    background-color: $blue;
     transition: width 0.3s ease-in-out;
   }
   &__link:hover:before,
-  &__link:hover::after,
-  &__link:focus:before,
-  &__link:focus::after {
+  &__link:hover::after {
     width: 100%;
   }
   &__link-gallery {
