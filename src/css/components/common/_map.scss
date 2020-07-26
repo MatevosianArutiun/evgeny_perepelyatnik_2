@@ -4,5 +4,9 @@
   height: 60vh;
   width: 70%;
   margin: 0 auto;
-  margin-bottom: 12vh;
+  transition: all 0.5s linear;
+  margin-bottom: 20vh;
+  &:hover {
+    width: 70%;
+  }
 }

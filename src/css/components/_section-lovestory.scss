@@ -7,8 +7,13 @@
   background-attachment: fixed;
 
   &__container {
+    text-align: center;
     height: 100%;
-    @include flex(center, flex-end, column);
+    @include flex(center, center, column);
+    @media screen and (min-width: $screen-desktop) {
+      @include flex(center, flex-end, column);
+      text-align: left;
+    }
   }
   &__content {
     max-width: 700px;

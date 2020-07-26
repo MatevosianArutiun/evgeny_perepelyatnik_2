@@ -5,12 +5,23 @@
   background-position: center 40%;
   background-attachment: fixed;
   &__container {
-    @include flex(space-between, center, row);
+    text-align: center;
+    height: 100%;
+    @include flex(center, center, column);
+    @media screen and (min-width: $screen-desktop) {
+      @include flex(center, center, row);
+      text-align: left;
+    }
   }
   &__content {
     display: inline-block;
     width: 50%;
-    margin-right: 200px;
+    margin-right: 0;
+    margin-bottom: 100px;
+    @media screen and (min-width: $screen-desktop) {
+      margin-right: 200px;
+      margin-bottom: 0;
+    }
   }
   &__subtitle {
     @include text($H700, 400, $white);
@@ -42,7 +53,12 @@
       text-shadow: 0px 0px 10px rgba(42, 202, 255, 1);
     }
   }
-
+  &__social {
+    @include flex(center, center, row);
+    @media screen and (min-width: $screen-desktop) {
+      @include flex(flex-start, center, row);
+    }
+  }
   &__list {
     @include flex(flex-start, center, row);
   }

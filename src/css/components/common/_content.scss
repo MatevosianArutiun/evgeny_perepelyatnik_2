@@ -49,8 +49,10 @@
   &__button:not(:last-child) {
     margin-right: 30px;
     background: $blue;
-    &:hover {
-      background-color: $white;
+    @media screen and (min-width: $screen-desktop-large) {
+      &:hover {
+        background-color: $white;
+      }
     }
   }
 }

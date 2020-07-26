@@ -12,14 +12,17 @@
   @media screen and (min-width: $screen-iphone) {
     padding: 20px 30px;
   }
-  &:hover {
-    background-color: $white;
-    color: $dark;
-  }
-  &:active {
-    transform: scaleX(0.97) translateY(1px);
-  }
-  &__text {
-    display: block;
+
+  @media screen and (min-width: $screen-desktop-large) {
+    &:hover {
+      background-color: $white;
+      color: $dark;
+    }
+    &:active {
+      transform: scaleX(0.97) translateY(1px);
+    }
+    &__text {
+      display: block;
+    }
   }
 }

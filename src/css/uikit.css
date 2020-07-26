@@ -4931,7 +4931,7 @@ ul.uk-nav-sub {
   z-index: 1020;
   /* 3 */
   box-sizing: border-box;
-  min-width: 200px;
+  min-width: 50px;
   /* 4 */
   padding: 25px;
   background: #fff;
