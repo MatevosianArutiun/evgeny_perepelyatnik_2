@@ -16,18 +16,31 @@
     }
   }
   &__content {
-    margin-right: 50px;
-    max-width: 600px;
+    max-width: 350px;
+    @media screen and (min-width: $screen-iphone-plus) {
+      margin-right: 50px;
+      max-width: 600px;
+    }
   }
   &__subtitle {
-    @include text($H700, 400, $white);
+    @include text($H500, 400, $white);
+    @media screen and (min-width: $screen-iphone) {
+      @include text($H700, 400, $white);
+    }
   }
   &__title {
-    @include text($H800, 900, $white);
+    @include text($H600, 900, $white);
+    @media screen and (min-width: $screen-iphone) {
+      @include text($H800, 900, $white);
+    }
   }
   &__text {
+    text-align: center;
     @include text($H200, 400, $gray);
     line-height: 2;
+    @media screen and (min-width: $screen-desktop) {
+      text-align: left;
+    }
   }
   &__button {
     background-color: $blue;

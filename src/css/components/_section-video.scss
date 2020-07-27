@@ -18,13 +18,30 @@
     margin-top: 25px;
     margin-left: 50%;
     transform: translateX(-50%);
-
     width: 72vw;
+    @media screen and (min-width: $screen-iphone-plus) {
+      text-align: left;
+      margin-bottom: 0;
+    }
   }
   &__previous {
-    margin-left: 100px;
+    display: none;
+    margin-left: 50px;
+    @media screen and (min-width: $screen-iphone-plus) {
+      display: inline-block;
+    }
+    @media screen and (min-width: $screen-tablet) {
+      margin-left: 100px;
+    }
   }
   &__next {
-    margin-right: 100px;
+    display: none;
+    margin-right: 50px;
+    @media screen and (min-width: $screen-iphone-plus) {
+      display: inline-block;
+    }
+    @media screen and (min-width: $screen-tablet) {
+      margin-right: 100px;
+    }
   }
 }

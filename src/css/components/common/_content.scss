@@ -3,12 +3,30 @@
     @include text($H700, 700, $dark);
     font-family: $italic-font;
     letter-spacing: 4px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $screen-tablet) {
+      @include text($H700, 700, $dark);
+
+      margin-bottom: 0px;
+    }
   }
   &__title {
-    @include text($H800, 400, $dark);
+    @include text($H200, 700, $dark);
     font-family: $main-font;
-    letter-spacing: 3px;
-    margin-bottom: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+    @media screen and (min-width: $screen-iphone) {
+      @include text($H500, 700, $dark);
+    }
+    @media screen and (min-width: $screen-iphone-plus) {
+      @include text($H700, 400, $dark);
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $screen-tablet) {
+      @include text($H800, 400, $dark);
+    }
   }
   &__title--blue {
     color: $blue;
@@ -41,10 +59,14 @@
   }
 
   &__text {
-    @include text($H500, 400, $darken);
+    text-align: center;
+    @include text($H50, 700, $darken);
     font-family: $text-font;
-
     margin-bottom: 70px;
+    @media screen and (min-width: $screen-iphone-plus) {
+      @include text($H500, 400, $darken);
+      text-align: left;
+    }
   }
   &__button:not(:last-child) {
     margin-right: 30px;

@@ -16,11 +16,17 @@
     }
   }
   &__img {
+    margin-right: 10px;
+    width: 100%;
     border: thick double $gray;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     border-radius: 5px;
     height: 60vh;
     object-fit: cover;
+    @media screen and (min-width: $screen-iphone-plus) {
+      width: auto;
+      margin-right: 0;
+    }
     @media screen and (min-width: $screen-desktop-large) {
       height: 95vh;
     }

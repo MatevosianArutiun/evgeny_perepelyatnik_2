@@ -9,9 +9,8 @@
   font-family: $button-font;
   transition: all 0.3s linear;
   background-color: $darken;
-  @media screen and (min-width: $screen-iphone) {
-    padding: 20px 30px;
-  }
+
+  padding: 20px 30px;
 
   @media screen and (min-width: $screen-desktop-large) {
     &:hover {

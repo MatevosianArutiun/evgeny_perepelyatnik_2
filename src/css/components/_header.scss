@@ -3,8 +3,11 @@
   background-image: url(../images/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 75% center;
+  background-position: 55% center;
   background-attachment: fixed;
+  @media screen and (min-width: $screen-iphone-plus) {
+    background-position: 75% center;
+  }
   @media screen and (min-width: $screen-desktop-large) {
     background-position: center 20%;
   }
@@ -28,5 +31,41 @@
     padding-top: 100px;
     height: 100%;
     @include flex(center, flex-start, column);
+  }
+  &__content {
+    width: 90%;
+  }
+  &__button {
+    display: none;
+    width: 150px;
+    @media screen and (min-width: $screen-iphone) {
+      display: inline-block;
+    }
+    @media screen and (min-width: $screen-iphone-plus) {
+      width: 200px;
+    }
+  }
+  &__subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    @media screen and (min-width: $screen-iphone) {
+      margin-bottom: 50px;
+    }
+    @media screen and (min-width: $screen-iphone-plus) {
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    margin-bottom: 0;
+    @media screen and (min-width: $screen-iphone) {
+      margin-bottom: 50px;
+    }
+  }
+  &__text {
+    font-size: $H10;
+    @media screen and (min-width: $screen-iphone-plus) {
+      font-size: $H100;
+    }
   }
 }

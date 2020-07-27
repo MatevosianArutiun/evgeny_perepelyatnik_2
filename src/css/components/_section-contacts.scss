@@ -15,38 +15,66 @@
   }
   &__content {
     display: inline-block;
-    width: 50%;
+    width: 100%;
     margin-right: 0;
-    margin-bottom: 100px;
+    margin-bottom: 5px;
+
+    @media screen and (min-width: $screen-iphone-plus) {
+      margin-bottom: 50px;
+    }
+    @media screen and (min-width: $screen-tablet) {
+      width: 50%;
+      margin-bottom: 100px;
+    }
     @media screen and (min-width: $screen-desktop) {
       margin-right: 200px;
       margin-bottom: 0;
     }
   }
   &__subtitle {
-    @include text($H700, 400, $white);
+    @include text($H500, 400, $white);
+    @media screen and (min-width: $screen-iphone-plus) {
+      @include text($H700, 400, $white);
+    }
   }
   &__title {
-    @include text($H800, 900, $white);
+    @include text($H600, 900, $white);
     margin-bottom: 0px;
+    @media screen and (min-width: $screen-iphone-plus) {
+      @include text($H800, 900, $white);
+    }
   }
   &__text {
-    @include text($H100, 400, $gray);
+    @include text($H10, 400, $gray);
     font-family: $text-font;
     letter-spacing: 1px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    @media screen and (min-width: $screen-iphone-plus) {
+      @include text($H100, 400, $gray);
+      margin-bottom: 30px;
+    }
   }
   &__span {
-    @include text($H100, 400, $white);
-    margin-top: 10px;
+    @include text($H10, 400, $white);
+    margin-top: 0;
+    @media screen and (min-width: $screen-iphone-plus) {
+      @include text($H100, 400, $white);
+      margin-top: 10px;
+    }
   }
   &__link {
-    @include text($H100, 400, $blue);
+    @include text($H10, 400, $blue);
     transition: all 0.3s linear;
+    @media screen and (min-width: $screen-iphone-plus) {
+      @include text($H100, 400, $blue);
+    }
     &--mail {
-      @include text($H300, 400, $blue);
+      @include text($H10, 400, $blue);
       display: inline-block;
       margin-bottom: 40px;
+      @media screen and (min-width: $screen-iphone-plus) {
+        @include text($H300, 400, $blue);
+      }
     }
     &:hover {
       color: rgba(42, 202, 255, 1);
@@ -54,7 +82,10 @@
     }
   }
   &__social {
-    @include flex(center, center, row);
+    display: none;
+    @media screen and (min-width: $screen-iphone) {
+      @include flex(center, center, row);
+    }
     @media screen and (min-width: $screen-desktop) {
       @include flex(flex-start, center, row);
     }
@@ -66,14 +97,26 @@
     fill: $gray;
   }
   &__form-wrapper {
-    padding-top: 50px;
-    width: 50%;
+    padding-top: 5px;
+    width: 70%;
     @include flex(center, center, column);
+    @media screen and (min-width: $screen-iphone) {
+      padding-top: 50px;
+    }
+    @media screen and (min-width: $screen-tablet) {
+      width: 50%;
+    }
   }
   &__title {
     margin-bottom: 20px;
     &--blue {
       animation: textAnimation 0s linear infinite;
+    }
+    &--form {
+      display: none;
+      @media screen and (min-width: $screen-iphone) {
+        display: block;
+      }
     }
   }
 }

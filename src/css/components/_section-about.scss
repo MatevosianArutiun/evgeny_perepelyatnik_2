@@ -13,9 +13,12 @@
     }
   }
   &__content {
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     text-align: center;
     margin-right: 0;
+    @media screen and (min-width: $screen-iphone-plus) {
+      margin-bottom: 200px;
+    }
     @media screen and (min-width: $screen-hd) {
       text-align: left;
       margin-bottom: 0;
@@ -23,17 +26,26 @@
     }
   }
   &__subtitle {
-    @include text($H700, 400, $white);
+    @include text($H500, 400, $white);
+    @media screen and (min-width: $screen-iphone) {
+      @include text($H700, 400, $white);
+    }
   }
   &__title {
-    @include text($H800, 900, $white);
+    @include text($H600, 900, $white);
     margin-bottom: 0px;
+    @media screen and (min-width: $screen-iphone) {
+      @include text($H800, 900, $white);
+    }
     &--blue {
       color: $blue;
     }
   }
   &__social {
-    @include flex(center, center, row);
+    display: none;
+    @media screen and (min-width: $screen-iphone) {
+      @include flex(center, center, row);
+    }
     @media screen and (min-width: $screen-hd) {
       @include flex(flex-start, center, row);
     }
@@ -48,16 +60,37 @@
     fill: $gray;
   }
   &__info {
-    max-width: 800px;
+    max-width: 90%;
+    @media screen and (min-width: $screen-iphone-plus) {
+      max-width: 600px;
+    }
+    @media screen and (min-width: $screen-tablet) {
+      max-width: 800px;
+    }
   }
   &__text {
     text-align: center;
-    @include text($H200, 400, $gray);
+    @include text($H10, 400, $gray);
     font-family: $text-font;
     letter-spacing: 2px;
     line-height: 1.6;
+    @media screen and (min-width: $screen-iphone) {
+      @include text($H50, 400, $gray);
+    }
+    @media screen and (min-width: $screen-iphone-plus) {
+      @include text($H100, 400, $gray);
+    }
+    @media screen and (min-width: $screen-tablet) {
+      @include text($H200, 400, $gray);
+    }
     @media screen and (min-width: $screen-hd) {
       text-align: left;
+    }
+    &--social {
+      display: none;
+      @media screen and (min-width: $screen-iphone) {
+        display: block;
+      }
     }
   }
   &__text:not(:last-child) {
