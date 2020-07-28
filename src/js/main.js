@@ -1,6 +1,7 @@
 "use strict";
 
 import { showLoading } from "./scripts/preloader";
+import { showBurgerMenu } from "./scripts/burger-menu";
 import { scroll } from "./scripts/scroll";
 import { changeTitle } from "./scripts/title";
 import { fullPage } from "./scripts/fullpage";
@@ -10,6 +11,7 @@ import { parallax } from "./scripts/parallax";
 document.addEventListener("DOMContentLoaded", () => {
   showLoading();
   scroll();
+  showBurgerMenu();
   changeTitle();
   setInterval(changeTitle, 12000);
   fullPage();

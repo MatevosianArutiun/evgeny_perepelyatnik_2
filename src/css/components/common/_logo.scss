@@ -1,5 +1,9 @@
 .logo {
   // margin-right: 100px;
+  display: none;
+  @media screen and (min-width: $screen-tablet) {
+    display: block;
+  }
   @media screen and (min-width: $screen-desktop-large) {
     margin-right: 0;
   }

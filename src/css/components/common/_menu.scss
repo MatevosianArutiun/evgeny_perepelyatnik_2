@@ -44,7 +44,10 @@
     width: 100%;
   }
   &__link-gallery {
-    @include flex(center, center, row);
+    display: none;
+    @media screen and (min-width: $screen-desktop-large) {
+      @include flex(center, center, row);
+    }
     // padding-top: 30px;
   }
   &__link-gallery:hover:before,
