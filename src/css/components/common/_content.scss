@@ -61,13 +61,13 @@
   }
 
   &__text {
-    text-align: center;
+    // text-align: center;
     @include text($H50, 700, $darken);
     font-family: $text-font;
     margin-bottom: 70px;
     @media screen and (min-width: $screen-desktop) {
       @include text($H500, 400, $darken);
-      text-align: left;
+      // text-align: left;
     }
   }
   &__button:not(:last-child) {

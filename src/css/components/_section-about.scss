@@ -16,7 +16,7 @@
     margin-bottom: 50px;
     text-align: center;
     margin-right: 0;
-    @media screen and (min-width: $screen-iphone-plus) {
+    @media screen and (min-width: $screen-hd) {
       margin-bottom: 200px;
     }
     @media screen and (min-width: $screen-hd) {
@@ -43,9 +43,7 @@
   }
   &__social {
     display: none;
-    @media screen and (min-width: $screen-iphone) {
-      @include flex(center, center, row);
-    }
+
     @media screen and (min-width: $screen-hd) {
       @include flex(flex-start, center, row);
     }
@@ -88,7 +86,7 @@
     }
     &--social {
       display: none;
-      @media screen and (min-width: $screen-iphone) {
+      @media screen and (min-width: $screen-hd) {
         display: block;
       }
     }
