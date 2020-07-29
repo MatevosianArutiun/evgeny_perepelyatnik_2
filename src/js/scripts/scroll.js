@@ -1,6 +1,5 @@
 export const scroll = () => {
   const anchorlinks = document.querySelectorAll('a[href^="#"]');
-
   for (let item of anchorlinks) {
     item.addEventListener("click", (e) => {
       let hashval = item.getAttribute("href");

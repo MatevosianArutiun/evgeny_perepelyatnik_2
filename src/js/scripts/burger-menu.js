@@ -6,13 +6,13 @@ export const showBurgerMenu = () => {
   const $burgerBtn = document.querySelector("#burger-btn");
   //   const $hfpNav = document.querySelector("#fp-nav");
 
-  //   window.addEventListener("resize", function (event) {
-  //     if (document.body.clientWidth > 1024) {
-  //       $burgerNavigation.classList.remove("burger-menu-noactive");
-  //     } else {
-  //       $burgerNavigation.classList.add("burger-menu-noactive");
-  //     }
-  //   });
+  // window.addEventListener("resize", function (event) {
+  //   if (document.body.clientWidth > 1024) {
+  //     $burgerNavigation.classList.remove("burger-menu-noactive");
+  //   } else {
+  //     $burgerNavigation.classList.add("burger-menu-noactive");
+  //   }
+  // });
 
   const changeClassBurgerMenu = () => {
     $burgerNavigation.classList.toggle("burger-menu");

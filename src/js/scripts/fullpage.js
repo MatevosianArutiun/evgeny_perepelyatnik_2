@@ -1,5 +1,6 @@
 export const fullPage = () => {
   const myFullpage = new fullpage("#fullpage", {
+    // fitToSectionDelay: 50,
     navigation: true,
     slidesNavigation: true,
     scrollBar: true,
@@ -12,9 +13,12 @@ export const fullPage = () => {
       "imagery",
       "video",
       "lovestory",
+      "portfolio",
       "contact",
       "footer",
     ],
+    // scrollOverflow: true,
+    // normalScrollElements: "#element, .element",
 
     // scrollHorizontally: true,
     // controlArrows: false,

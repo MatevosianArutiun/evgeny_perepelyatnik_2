@@ -1,0 +1,44 @@
+.section-portfolio {
+  padding-top: 10px;
+  background-image: url(../images/bg-video.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center 40%;
+  background-attachment: fixed;
+  &__container {
+    // padding: 0;
+    height: 100vh;
+    @include flex(center, center, column);
+  }
+  &__title {
+    @include text($H300, 900, $darken);
+    font-family: $main-font;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+  &__lightbox {
+    @include flex(center, center, row, wrap);
+    margin: 0 auto;
+  }
+  &__wrapper {
+    @include flex(center, center, row);
+    margin-bottom: 50px;
+  }
+  &__img {
+    border: thick double $gray;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    object-fit: contain;
+    width: 90%;
+    height: auto;
+  }
+  &__video {
+    box-sizing: border-box !important;
+    border: thick double $gray;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    height: 100%;
+    width: 90%;
+    height: auto;
+  }
+}

@@ -14,7 +14,7 @@
   //   inset 0 -15px 30px rgba(0, 0, 0, 0.2);
 
   &__container {
-    @include flex(space-between, center, row);
+    @include flex(flex-start, center, row);
     height: 100%;
     padding: 0 40px;
     @media screen and (min-width: $screen-desktop-large) {

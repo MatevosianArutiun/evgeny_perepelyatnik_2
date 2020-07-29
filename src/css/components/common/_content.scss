@@ -31,29 +31,31 @@
   &__title--blue {
     color: $blue;
 
-    animation: textAnimation 4s linear infinite;
+    @media screen and (min-width: $screen-desktop-large) {
+      animation: textAnimation 4s linear infinite;
 
-    @keyframes textAnimation {
-      0% {
-        opacity: 0;
-      }
-      8% {
-        opacity: 0;
-      }
-      17% {
-        opacity: 1;
-      }
-      25% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0.6;
-      }
-      90% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 0;
+      @keyframes textAnimation {
+        0% {
+          opacity: 0;
+        }
+        8% {
+          opacity: 0;
+        }
+        17% {
+          opacity: 1;
+        }
+        25% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.6;
+        }
+        90% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
       }
     }
   }
@@ -63,7 +65,7 @@
     @include text($H50, 700, $darken);
     font-family: $text-font;
     margin-bottom: 70px;
-    @media screen and (min-width: $screen-iphone-plus) {
+    @media screen and (min-width: $screen-desktop) {
       @include text($H500, 400, $darken);
       text-align: left;
     }
