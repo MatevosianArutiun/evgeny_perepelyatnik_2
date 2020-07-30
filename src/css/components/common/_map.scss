@@ -6,8 +6,8 @@
   margin: 0 auto;
   transition: all 0.5s linear;
   margin-bottom: 20vh;
-  @media screen and (min-width: $screen-iphone) {
-    height: 60vh;
+  @media screen and (min-width: $screen-iphone-plus) {
+    height: 50vh;
   }
   &:hover {
     width: 70%;

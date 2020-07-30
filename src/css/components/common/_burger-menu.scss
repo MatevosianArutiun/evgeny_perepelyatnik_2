@@ -53,9 +53,9 @@
     margin-bottom: 40px;
   }
   &__link {
-    @include text($H400, 900, $darken);
+    @include text($H200, 900, $darken);
     opacity: 0.7;
-    @media screen and (min-width: $screen-iphone) {
+    @media screen and (min-width: $screen-iphone-plus) {
       @include text($H600, 900, $darken);
     }
   }

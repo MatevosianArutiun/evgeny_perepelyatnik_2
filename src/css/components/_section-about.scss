@@ -34,7 +34,7 @@
   &__title {
     @include text($H600, 900, $white);
     margin-bottom: 0px;
-    @media screen and (min-width: $screen-iphone) {
+    @media screen and (min-width: $screen-iphone-plus) {
       @include text($H800, 900, $white);
     }
     &--blue {

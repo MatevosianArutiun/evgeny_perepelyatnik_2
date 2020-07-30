@@ -83,7 +83,7 @@
   }
   &__social {
     display: none;
-    @media screen and (min-width: $screen-iphone) {
+    @media screen and (min-width: $screen-tablet) {
       @include flex(center, center, row);
     }
     @media screen and (min-width: $screen-desktop) {
@@ -114,7 +114,7 @@
     }
     &--form {
       display: none;
-      @media screen and (min-width: $screen-iphone) {
+      @media screen and (min-width: $screen-iphone-plus) {
         display: block;
       }
     }

@@ -1,7 +1,7 @@
 .form {
   display: none;
   width: 100%;
-  @media screen and (min-width: $screen-iphone) {
+  @media screen and (min-width: $screen-iphone-plus) {
     display: block;
   }
   &__input {

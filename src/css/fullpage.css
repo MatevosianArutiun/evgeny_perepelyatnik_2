@@ -98,6 +98,7 @@ html.fp-enabled,
   transition: none !important;
 }
 #fp-nav {
+  display: none;
   position: fixed;
   z-index: 100;
   top: 50%;
@@ -105,6 +106,9 @@ html.fp-enabled,
   transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -webkit-transform: translate3d(0, -50%, 0);
+  @media screen and (min-width: 1025px) {
+    display: block;
+  }
 }
 #fp-nav.fp-right {
   right: 0px;
